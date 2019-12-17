@@ -1,0 +1,104 @@
+<!--#################### HERO / JUMBOTRON #################################-->
+  <div class="jumbotron jumbotron-fluid d-flex align-items-center hero-image">
+    <div class="container text-center text-white ">
+      <h1 id="hero-title">Add A Recipe</h1>
+      <p id="hero-subtitle"></p>
+    </div>
+  </div>
+
+  <!--#################### END HERO / JUMBOTRON #################################-->
+
+<div class="container mb-4">
+<!-- ADDD RECIPE SECTION-->
+        <div class="row">
+            <div class="col-12 mt-3">
+
+
+                <div class="card mt-1" id="add-recipe-section">
+                    <h5 class="card-header">Add New Recipe</h5>
+                    <div class="card-body">
+
+
+                        <form>
+                            <!-- NAME & DESCRIPTION-->
+                            <div class="form-row">
+
+                                <div class="form-group col-12">
+                                    <label for="recipeName">Recipe Name</label>
+                                    <input type="text" class="form-control" id="recipeName" placeholder="Recipe Name"
+                                        required>
+                                </div>
+                                <div class="form-group col-12">
+                                    <label for="recipeDescription">Description</label>
+                                    <textarea type="text" class="form-control" id="recipeDescription"
+                                        placeholder="Tell us about your recipe" rows="3" required></textarea>
+                                </div>
+                            </div>
+                            <!-- END NAME & DESCRIPTION-->
+
+                            <!-- CHECK BOX SECTION-->
+                            <label for="recipeDescription">Select Category(ies)</label><br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="category-1-checkbox" value="Vegan">
+                                <label class="form-check-label" for="category-1-checkbox">Vegan</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="category-2-checkbox"
+                                    value="Vegetarian">
+                                <label class="form-check-label" for="category-2-checkbox">Vegetarian</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="category-3-checkbox"
+                                    value="Pescatarian">
+                                <label class="form-check-label" for="category-3-checkbox">Pescatarian</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="category-4-checkbox" value="Paleo">
+                                <label class="form-check-label" for="category-4-checkbox">Paleo</label>
+                            </div>
+
+                            <!-- END CHECK BOX SECTION-->
+
+                            <div class="form-row mt-3">
+                                <div class="form-group col-md-6">
+                                    <label for="inputIngredients">Ingredients</label>
+                                    <section id="list-ingredients">
+                                        <input type="text" class="form-control mb-1" id="ingredient-1" required>
+                                        <input type="text" class="form-control mb-1" id="ingredient-2">
+                                        <input type="text" class="form-control mb-1" id="ingredient-3">
+                                    </section>
+                                    <button type="button" class="btn btn-secondary float-right" id="add-ingredient">Add
+                                        Ingredient</button>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputIngredients">Instructions</label>
+                                    <section id="list-instructions">
+                                        <input type="text" class="form-control mb-1" id="step-1" required>
+                                        <input type="text" class="form-control mb-1" id="step-2">
+                                        <input type="text" class="form-control mb-1" id="step-3">
+                                    </section>
+                                    <button type="button" class="btn btn-secondary float-right" id="add-step">Add
+                                        Step</button>
+
+                                </div>
+                                <div class="form-group col-12" id="list-instructions">
+                                    <label for="recipeImage">Image URL</label>
+                                    <input type="text" class="form-control" id="recipeImg" placeholder="Image URL"
+                                        required>
+
+                                </div>
+
+                            </div>
+
+
+                    </div>
+                    <button type="submit" class="btn btn-primary mx-2" id="add-recipe">Add Article</button>
+                    <div id="success-fail"></div>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- END ADD RECIPE -->
+</div>

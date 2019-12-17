@@ -1,0 +1,187 @@
+<!--#################### HERO / JUMBOTRON #################################-->
+  <div class="jumbotron jumbotron-fluid d-flex align-items-center hero-image">
+    <div class="container text-center text-white ">
+      <h1 id="hero-title">WELCOME</h1>
+      <p id="hero-subtitle">Cheff is your recipe inspiration from other Chefs around the world!</p>
+    </div>
+  </div>
+
+  <!--#################### END HERO / JUMBOTRON #################################-->
+
+<!--#################### WELCOME MESSAGE #################################-->
+<div class="container mb-5">
+  <div class="row justify-content-center">
+    <div class="col-12 text-center mb-4">
+      <h1>Where Chefs Share</h1>
+    </div>
+
+    <div class="col-12 col-md-4 ">
+      <img src="/images/chef-home.png" class="img-fluid mx-auto" alt="Responsive image"
+        style="min-width:200px">
+    </div>
+    <div class="col-12 col-md-4 ">
+      <p id="chef-intro-text">Share your recipes with Cheff to get your dishes to tables of homes all over the world. 
+        Expand your palate. Get recipes with step by step instructions and full lists of ingredients. Get inspired.
+      </p>
+    </div>
+  </div>
+
+</div>
+<!--#################### END WELCOME MESSAGE #################################-->
+
+<!--##################################################################################-->
+<!--#################### DISPLAY RECIPES BY CATEGORY #################################-->
+<!--##################################################################################-->
+
+<!--####################### MOST RECENT SECTION  #################-->
+<div class="container mb-4">
+  <div class="row justify-content-center">
+    <div class="col-12 text-center mb-4 mt-5">
+      <h1>Most Recent Recipes</h1>
+    </div>
+  </div>
+
+  <div class="row">
+
+
+    <!-- DYNAMIC CARD-->
+    {{#each recipes}}
+     <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card mb-2">
+        <img class="card-img-top" id="all-recipe-img" src="{{this.imgURL}}" alt="Recipe Image">
+        <div class="card-body">
+          <h5 class="card-title">{{this.name}}</h5>
+          <a href="/recipe/{{this.id}}" class="btn btn-block btn-primary" id="view-recipe-button">View Recipe</a>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+
+
+    <a href="/all-recipes/" class="btn btn-block btn-outline-primary mt-2 mx-2" id="view-all-button">View All Recipes</a>
+
+  </div>
+</div>
+<!--####################### END MOST RECENT  #################-->
+
+
+
+<!--####################### VEGAN SECTION  #################-->
+<div class="container mb-4">
+  <div class="row justify-content-center">
+    <div class="col-12 text-center mb-4 mt-5">
+      <h1>Vegan Recipes</h1>
+    </div>
+  </div>
+
+  <div class="row">
+
+    <!-- DYNAMIC CARD-->
+    {{#each vegan}}
+     <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card mb-2">
+        <img class="card-img-top" id="all-recipe-img" src="{{this.imgURL}}" alt="Recipe Image">
+        <div class="card-body">
+          <h5 class="card-title">{{this.name}}</h5>
+          <a href="/recipe/{{this.id}}" class="btn btn-block btn-primary" id="view-recipe-button">View Recipe</a>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+
+
+    <a href="/all-recipes/1" class="btn btn-block btn-outline-primary mt-2 mx-2" id="view-all-button">View All Recipes</a>
+
+  </div>
+</div>
+<!--####################### END VEGAN SECTION  #################-->
+
+<!--####################### VEGATARIAN SECTION  #################-->
+<div class="container mb-4">
+  <div class="row justify-content-center">
+    <div class="col-12 text-center mb-4 mt-5">
+      <h1>Vegetarian Recipes</h1>
+    </div>
+  </div>
+
+  <div class="row">
+
+    <!-- DYNAMIC CARD-->
+    {{#each vegetarian}}
+     <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card mb-2">
+        <img class="card-img-top" id="all-recipe-img" src={{this.imgURL}} alt="Recipe Image">
+        <div class="card-body">
+          <h5 class="card-title">{{this.name}}</h5>
+          <a href="/recipe/{{this.id}}" class="btn btn-block btn-primary" id="view-recipe-button">View Recipe</a>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+
+
+    <a href="/all-recipes/2" class="btn btn-block btn-outline-primary mt-2 mx-2" id="view-all-button">View All Recipes</a>
+
+  </div>
+</div>
+<!--####################### END VEGATARIAN SECTION  #################-->
+
+<!--####################### PESCATARIAN SECTION  #################-->
+<div class="container mb-4">
+  <div class="row justify-content-center">
+    <div class="col-12 text-center mb-4 mt-5">
+      <h1>Pescatarian Recipes</h1>
+    </div>
+  </div>
+
+  <div class="row">
+
+    <!-- DYNAMIC CARD-->
+    {{#each pescatarian}}
+     <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card mb-2">
+        <img class="card-img-top" id="all-recipe-img" src={{this.imgURL}} alt="Recipe Image">
+        <div class="card-body">
+          <h5 class="card-title">{{this.name}}</h5>
+          <a href="/recipe/{{this.id}}" class="btn btn-block btn-primary" id="view-recipe-button">View Recipe</a>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+
+
+    <a href="/all-recipes/3" class="btn btn-block btn-outline-primary mt-2 mx-2" id="view-all-button">View All Recipes</a>
+
+  </div>
+</div>
+<!--####################### END PESCATARIAN SECTION  #################-->
+
+<!--####################### PALEO SECTION  #################-->
+<div class="container mb-4">
+  <div class="row justify-content-center">
+    <div class="col-12 text-center mb-4 mt-5">
+      <h1>Paleo Recipes</h1>
+    </div>
+  </div>
+
+  <div class="row">
+
+    <!-- DYNAMIC CARD-->
+    {{#each paleo}}
+     <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card mb-2">
+        <img class="card-img-top" id="all-recipe-img" src={{this.imgURL}} alt="Recipe Image">
+        <div class="card-body">
+          <h5 class="card-title">{{this.name}}</h5>
+          <a href="/recipe/{{this.id}}" class="btn btn-block btn-primary" id="view-recipe-button">View Recipe</a>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+
+
+    <a href="/all-recipes/4" class="btn btn-block btn-outline-primary mt-2 mx-2" id="view-all-button">View All Recipes</a>
+
+  </div>
+</div>
+<!--####################### END PALEO SECTION  #################-->

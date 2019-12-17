@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Cheff | A Recipe Repo For Chefs</title>
+
+  <!------------ STYLE SHEETS --------------->
+  <link href="https://fonts.googleapis.com/css?family=Amaranth|Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="/styles/styles.css">
+
+
+</head>
+
+<body>
+  <!--#################### NAV BAR #################################-->
+
+  <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
+
+    <a href="/" class="navbar-brand d-flex w-50 mr-auto"><img src="/images/logo-icon.png" width="auto" height="40px"
+        class="d-inline-block align-top" alt=""><section id="welcome-message">  </section></section></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="navbar-collapse collapse w-100 text-center" id="collapsibleNavbar">
+      <ul class="navbar-nav w-100 justify-content-center">
+
+        <a class="navbar-brand" id="cheff-name" href="/"><img src="/images/logo-name.png" width="auto" height="40px"
+            class="d-inline-block align-top" alt=""></a>
+
+      </ul>
+
+
+      <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+
+        <li class="nav-item dropdown nav-btn">
+          <button type="button" class=" dropdown-toggle btn btn-outline-secondary btn-block btn-small" href="#" id="navbarDropdown"
+            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Explore Recipes
+          </button>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/all-recipes/">All</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/all-recipes/1">Vegan</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/all-recipes/2">Vegatarian</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/all-recipes/3">Pescatarian</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/all-recipes/4">Paleo</a>
+          </div>
+        </li>
+        <li class="nav-item nav-btn" id="login-account-nav">
+          
+        </li>
+        <li class="nav-item nav-btn" id="log-out-holder"></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--#################### END NAV BAR #################################-->
+
+
+
+
+  
+
+
+  {{{body}}}
+
+  <!--#################### FOOTER #################################-->
+  <footer class="page-footer font-small mdb-color bg-dark pt-4">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-6">
+
+          <!-- Image -->
+          <img src="/images/logo-footer.png" class="rounded mx-auto d-block img-fluid" alt="..."
+            style="max-width:125px;">
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Copyright -->
+    <div id="copyright" class="footer-copyright text-center text-white py-2">© 2019 Copyright:
+      <a href="/"> Cheff</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+
+
+
+  <!------------- JQUERY AND JAVASCRIPT ------------->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="/js/add-recipe.js"></script>
+  <script src="/js/check-login.js"></script>
+</body>
+
+</html>
